@@ -59,7 +59,6 @@ struct DATE {
  * =====================================================================================
  */
 struct DATE to_date(int n_days) {
-  int year, week, days;
   struct DATE date;
   date.year = n_days / 365;
   date.week = (n_days % 365) / 7;
@@ -88,7 +87,8 @@ float euclidiana(double x1, double y1, double x2, double y2) {
   end.x = x2;
   end.y = y2;
 
-  float aux = sqrt((pow((start.x - end.x), 2) + pow((start.y - end.y), 2)));
+  float aux;
+  aux = sqrt((pow((start.x - end.x), 2) + pow((start.y - end.y), 2)));
 
   return aux;
 }
@@ -100,16 +100,18 @@ float euclidiana(double x1, double y1, double x2, double y2) {
  * =====================================================================================
  */
 void get_numbers(int a, int b) {
-  int MAX = b - a;
+  int i;
+  int MAX;
+  MAX = b - a;
   int aux[MAX];
   int *numbers;
   numbers = aux;
 
-  for (int i = 0; i <= MAX; ++i) {
+  for (i = 0; i <= MAX; ++i) {
     aux[i] = a + i;
   }
 
-  for (int i = 0; i < MAX; ++i) {
+  for (i = 0; i < MAX; ++i) {
     printf("%d\n", *numbers);
     numbers++;
   }
@@ -122,8 +124,9 @@ void get_numbers(int a, int b) {
  * =====================================================================================
  */
 void tri_rec(int lines) {
-  for (int i = 0; i < lines; ++i) {
-    for (int j = 0; j < i; ++j) {
+  int i, j;
+  for (i = 0; i < lines; ++i) {
+    for (j = 0; j < i; ++j) {
       printf("*");
     }
     printf("\n");
@@ -137,9 +140,11 @@ void tri_rec(int lines) {
  * form
  * =====================================================================================
  */
+
 void tri_rec_inv(int lines) {
-  for (int i = lines; i > 0; --i) {
-    for (int j = 0; j < i; ++j) {
+  int i, j;
+  for (i = lines; i > 0; --i) {
+    for (j = 0; j < i; ++j) {
       printf("*");
     }
     printf("\n");
@@ -280,8 +285,9 @@ void two_matrix(int SZ, double *a, double *b, double *c, double (*f)()) {
  * =====================================================================================
  */
 void add_matrix(int SZ, double *a, double *b, double *c) {
-  for (int i = 0; i < SZ; i++) {
-    for (int j = 0; j < SZ; j++) {
+  int i, j;
+  for (i = 0; i < SZ; i++) {
+    for (j = 0; j < SZ; j++) {
       c[i + j * SZ] = a[i + j * SZ] + b[i + j * SZ];
     }
   }
@@ -294,8 +300,9 @@ void add_matrix(int SZ, double *a, double *b, double *c) {
  * =====================================================================================
  */
 void sub_matrix(int SZ, double *a, double *b, double *c) {
-  for (int i = 0; i < SZ; i++) {
-    for (int j = 0; j < SZ; j++) {
+  int i, j;
+  for (i = 0; i < SZ; i++) {
+    for (j = 0; j < SZ; j++) {
       c[i + j * SZ] = a[i + j * SZ] - b[i + j * SZ];
     }
   }
