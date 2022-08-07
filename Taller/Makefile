@@ -12,6 +12,7 @@ app:
 	$(GCC) $(FLAGSC) -c $(MODULO).c
 	$(GCC) $(FLAGSC) -c $@.c
 	$(GCC) $(FLAGS) -o $@ $@.o $(MODULO).o
+	$(RM) *.o
 
 clear:
 	$(RM) app *.o
