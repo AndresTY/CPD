@@ -1,18 +1,18 @@
-# TALLER 1 - PRACTICA DE C
+# TALLER 1 - PRÁCTICA DE C
 
-El objetivo del taller es practicar y recordar la herramientas y la sintaxis del lenguaje de programcion *C* para posteriormente adentrarnos en la computacion paralela y distribuida. 
+El objetivo del taller es practicar y recordar las herramientas y la sintaxis del lenguaje de programación *C* para posteriormente adentrarnos en la computación paralela y distribuida. 
 
 ## Ejercicios
 
-Los ejecrcicios dispuestos en [PDF Taller](/Taller_C_01.pf).
+Los ejercicios dispuestos en [PDF Taller](/Taller_C_01.pdf).
 
-1- Escribe un programa en C que acepte dos enteros del usuario y calcule el producto de losdos enteros
+1- Escribe un programa en C que acepte dos enteros del usuario y calcule el producto de los dos enteros
 
 ```c
 double product(int a, double b) { return a * b; }
 ```
 
-Se puede observar la declaracion de una funcion con un un retorno de tipo double.
+Se puede observar la declaración de una función con un retorno de tipo double.
 
 ---
 
@@ -28,7 +28,7 @@ struct DATE to_date(int n_days) {
 }
 ```
 
-Para esta solucion se implementa el concepto de estructura, retorinando un objeto con los datos requeridos.
+Para esta solución se implementa el concepto de estructura, retornando un objeto con los datos requeridos.
 
 ---
 3.- Escribe un programa en C para calcular la distancia entre los dos puntos.
@@ -49,7 +49,7 @@ float euclidiana(double x1, double y1, double x2, double y2) {
   return aux;
 }
 ```
-De igual manera que el ejercicio anterior se implementan las estructuras y adicionalmente se utiliza la biblioteca de Math.h para la raiz cuadrada.
+De igual manera que el ejercicio anterior se implementan las estructuras y adicionalmente se utiliza la biblioteca de Math.h para la raíz cuadrada.
 
 ---
 
@@ -77,7 +77,7 @@ void get_numbers(int a, int b) {
 ```
 ---
 
-5.- Hacer una triangulo rectangulo con asteriscos
+5.- Hacer un triángulo rectángulo con asteriscos
 
 ```c
 
@@ -94,7 +94,7 @@ void tri_rec(int lines) {
 ```
 ---
 
-6.- creacion de matriz NxN con dimesiones no mayores a 8 con valores 1
+6.- creación de matriz NxN con dimensiones no mayores a 8 con valores 1
 
 ```c
 void Matrix_Init_col(int SZ, double *a, double (*f)()) {
@@ -122,11 +122,11 @@ void Matrix_one(int size) {
 }
 ```
 
-Se exploran los punteros para la asignacion de arreglos y de funciones "anonimas"
+Se exploran los punteros para la asignación de arreglos y de funciones "anónimas"
 
 ---
 
-7.- creacion de matriz NxN con dimesiones no mayores a 8 con valores aleatorios
+7.- creación de matriz NxN con dimensiones no mayores a 8 con valores aleatorios
 
 ```c
 void Matrix_rand(int size) {
@@ -174,7 +174,7 @@ void sub_matrix(int SZ, double *a, double *b, double *c) {
 ```
 ---
 
-10.- multiplicacion de matrices
+10.- multiplicación de matrices
 ```c
 void mult_matriz(int N, double *a, double *b, double *c) {
   int i, j, k;
@@ -196,7 +196,7 @@ void mult_matriz(int N, double *a, double *b, double *c) {
 
 # USO
 
-### Construccion del aplicativo
+### Construcción del aplicativo
 
 ```
 Make app
@@ -216,16 +216,17 @@ Make clear
 
 ### Ejecuciones
 
-|Command|Description|
+|Comando|Descripción|
 |---|---|
-|```Make test```| Ejecuta una simulacion que muestra todas las funciones|
-|```Make product```| ejecucion del $1^{re}$ punto|
-|```Make day\_to\_date```| ejecucion del $2^{do}$ punto|
-|```Make distnacia```| ejecucion del $3^{er}$ punto|
-|```Make sequence```| ejecucion del $4^{to}$ punto|
-|```Make triangle```| ejecucion del $5^{to}$ punto|
-|```Make identity```| ejecucion del $6^{to}$ punto|
-|```Make rand```| ejecucion del $7^{mo}$ punto|
-|```Make sum\_NxN```| ejecucion del $8^{vo}$ punto|
-|```Make sub\_NxN```| ejecucion del $9^{no}$ punto|
-|```Make mutl\_NxN```| ejecucion del $10^{mo}$ punto|
+|```Make test```| Ejecuta una simulación que muestra todas las funciones|
+|```Make product```| ejecución del $1^{re}$ punto|
+|```Make day\_to\_date```| ejecución del $2^{do}$ punto|
+|```Make distnacia```| ejecución del $3^{er}$ punto|
+|```Make sequence```| ejecución del $4^{to}$ punto|
+|```Make triangle```| ejecución del $5^{to}$ punto|
+|```Make identity```| ejecución del $6^{to}$ punto|
+|```Make rand```| ejecución del $7^{mo}$ punto|
+|```Make sum\_NxN```| ejecución del $8^{vo}$ punto|
+|```Make sub\_NxN```| ejecución del $9^{no}$ punto|
+|```Make mutl\_NxN```| ejecución del $10^{mo}$ punto|
+
