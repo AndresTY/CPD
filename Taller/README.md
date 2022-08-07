@@ -221,7 +221,7 @@ Make clear
 |```Make test```| Ejecuta una simulación que muestra todas las funciones|
 |```Make product```| ejecución del $1^{re}$ punto|
 |```Make day\_to\_date```| ejecución del $2^{do}$ punto|
-|```Make distnacia```| ejecución del $3^{er}$ punto|
+|```Make distancia```| ejecución del $3^{er}$ punto|
 |```Make sequence```| ejecución del $4^{to}$ punto|
 |```Make triangle```| ejecución del $5^{to}$ punto|
 |```Make identity```| ejecución del $6^{to}$ punto|
