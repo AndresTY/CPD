@@ -199,36 +199,36 @@ void mult_matriz(int N, double *a, double *b, double *c) {
 ### Construcción del aplicativo
 
 ```
-Make app
+make app
 ```
 
 ### Limpieza \*.o
 
 ```
-Make clean
+make clean
 ```
 
 ### Limpieza total
 
 ```
-Make clear
+make clear
 ```
 
 ### Ejecuciones
 
 |Comando|Descripción|
 |---|---|
-|```Make test```| Ejecuta una simulación que muestra todas las funciones|
-|```Make product```| ejecución del $1^{re}$ punto|
-|```Make day\_to\_date```| ejecución del $2^{do}$ punto|
-|```Make distancia```| ejecución del $3^{er}$ punto|
-|```Make sequence```| ejecución del $4^{to}$ punto|
-|```Make triangle```| ejecución del $5^{to}$ punto|
-|```Make identity```| ejecución del $6^{to}$ punto|
-|```Make rand```| ejecución del $7^{mo}$ punto|
-|```Make sum\_NxN```| ejecución del $8^{vo}$ punto|
-|```Make sub\_NxN```| ejecución del $9^{no}$ punto|
-|```Make mutl\_NxN```| ejecución del $10^{mo}$ punto|
+|```make test```| Ejecuta una simulación que muestra todas las funciones|
+|```make product```| ejecución del $1^{re}$ punto|
+|```make day\_to\_date```| ejecución del $2^{do}$ punto|
+|```make distancia```| ejecución del $3^{er}$ punto|
+|```make sequence```| ejecución del $4^{to}$ punto|
+|```make triangle```| ejecución del $5^{to}$ punto|
+|```make identity```| ejecución del $6^{to}$ punto|
+|```make rand```| ejecución del $7^{mo}$ punto|
+|```make sum\_NxN```| ejecución del $8^{vo}$ punto|
+|```make sub\_NxN```| ejecución del $9^{no}$ punto|
+|```make mutl\_NxN```| ejecución del $10^{mo}$ punto|
 
 # RECOMENDACIONES
 
