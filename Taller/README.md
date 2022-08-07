@@ -230,3 +230,14 @@ Make clear
 |```Make sub\_NxN```| ejecución del $9^{no}$ punto|
 |```Make mutl\_NxN```| ejecución del $10^{mo}$ punto|
 
+# RECOMENDACIONES
+
+* En caso de no estar totalmente acostumbrado a la visualización en la terminal, recomiendo cargar la información de salida en un .txt para mejor apreciación
+	
+	`make test > test.txt`
+
+* Especificaciones del entorno de ejecución:
+	* > gcc version 12.1.1 20220730 (GCC)
+	* > Editor: nvim
+	* > standard C libraries (string, stdio, math, etc...) 
+
