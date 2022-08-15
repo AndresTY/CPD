@@ -1,6 +1,86 @@
 # TALLER 1 - PRÁCTICA DE C
 
-El objetivo del taller es practicar y recordar las herramientas y la sintaxis del lenguaje de programación *C* para posteriormente adentrarnos en la computación paralela y distribuida. 
+## Resumen
+
+El objetivo del taller es practicar y recordar las herramientas y la sintaxis del lenguaje de programación *C* abordando desde los conceptos mas simples como los que requieren un nivel avanzado de abstraccion, para posteriormente adentrarnos en la computación paralela y distribuida. 
+
+## Intrduccion
+
+C es un lenguaje de programacion de proposito general creado en 1970 por Dennis Ritchie. Al igual que B, es un lenguaje orientado a la implementacion de sistemas operativos, con enfasis en UNIX.
+
+Entre las filosofia del lenguaje C, se destaca que sean unicamente las instrucciones necesearias en lenguaje de maquina para traduccir cada elemento del lenguaje.
+
+### Conceptos basicos del lenguaje de programacion C
+
+* Tipos, operadores y expresiones
+
+	las variables y constante son objetos basicos. Donde declaramos una lista de variables que seran usadas en el programa , y el valor que contendran dependera de la asignacion inicial.
+
+	El tipo es un objeto que determina el conjunto de valores que podra tener y que tipo de operaciones tendra. Estos tipos puede ser: 
+
+	|Tipo|Capacidad|
+	|---|---|
+	|char| 8 bits|
+	|short| 16 bits|
+	|Int | 32 bits|
+	|float| 32 bits|
+	|double| 64 bits|
+
+	El estadar ANSI permite unos cambios y adiciones a los tipos previamente listados dado que ahora se pueden definir las formas *signed* y *unsigned* para los enteros, esto permite mayor precision en las operaciones de putno flotante. Por otro lado, se encuentra el *long* para el double que de igual manera extendiende la precision. Y por ultimo, se declara el objeto *const*, el cual no permite un cambio de valor posteriormente a la declaricion.
+
+	Por lo anterior, cabe hacer un analisis para poder diferencias el *const* y el *DEFINE*, ya que las dos estrucuturas impiden la modificicacion del valor despues de la declaracion de la varible, esta diferencia se puede resumir en que el *const* es manejado por el procesador mientras que el *DEFINE* es manejado por el preprosesador, esto es una gran ventaja por parte del *const* ya que comprueba el tipo de dato, mientras que el *DEFINE* no puede validar su tipo. Ademas, *const* nos permite utilizar los punteros, lo que significa que se puede hace un typecast, mover direcciones, y todo lo que se podria hacer con una variable normal ademas de cambiar datos en si, ya que los datos asignado a esa variable es constante.
+
+	En el conjunto de los char se encuentran secuencias de escape o de terminacion, las cuales son:
+
+	|tipo|significado|
+	|---|---|
+	|\a|bell character|
+	|\\|backslash|
+	|\b|backspace|
+	|\?|question mark|
+	|\f|formfeed|
+	|\'|single quote|
+	|\"|double quote|
+	|\n|newline|
+	|\r|carriage return|
+	|\000|octal number|
+	|\t|horizontal tab|
+	|\xhh|hexa number|
+	|\v|vertical tab|
+
+	Por ultimo, el conjunto de operadores son:
+
+	|simbolo|valor|
+	|---|---|
+	|+| adicion |
+	|-| resta |
+	|*| multiplicacion |
+	|/| division |
+	|%| modulo |
+	|< >| mayor/ menor que |
+	|>= <=| mayor igual / menor igual que |
+	|==| igualdad |
+	|!=| diferencia |
+	|!| negacion (logico)|
+	|&&| conjuncion (logico)|
+	|\|\| | disyuncion (logico)|
+	|&| conjuncion bitwise|
+	|\|| disyuncion inclusiva bitwise |
+	|^| disyuncion exclusiva bitwise|
+	|>>| desplazamiento a derecha|
+	|<<| desplazamiento a izquierda|
+	|~| complemento de unos (unario)|
+	|->| acceso a elementos en estructuras o uniones |
+	|?:| condicional |
+
+* Funciones
+
+	
+
+* Punteros
+
+* Estructuras
+
 
 ## Ejercicios
 
