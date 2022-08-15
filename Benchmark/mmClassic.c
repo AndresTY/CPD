@@ -23,7 +23,7 @@ static double MEM_CHUNK[MEM_SIZE];
 
 int main(int argc, char **argv) {
   int N;
-  double *a, *b, *c, *d;
+  double *a, *b, *c;
   struct timeval start, end;
 
   if (argc < 1) {
@@ -35,7 +35,6 @@ int main(int argc, char **argv) {
   a = MEM_CHUNK;
   b = a + (N * N);
   c = b + (N * N);
-  d = b + (N * N);
   inicializacion(N, a, b, c);
   /*
   printf("--------a--------\n");
@@ -47,8 +46,9 @@ int main(int argc, char **argv) {
   gettimeofday(&start, NULL);
   multMatriz(N, a, b, c);
   gettimeofday(&end, NULL);
-  printf("%ld\n", ((end.tv_sec * 1000000 + end.tv_usec) -
-                   (start.tv_sec * 1000000 + start.tv_usec)));
+  printf("%f\n", (((end.tv_sec * 1000000 + end.tv_usec) -
+                   (start.tv_sec * 1000000 + start.tv_usec)) *
+                  1e-6));
 
   /*printf("--------Result--------\n");
   printMat(N,c);
