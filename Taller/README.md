@@ -75,11 +75,29 @@ Entre las filosofia del lenguaje C, se destaca que sean unicamente las instrucci
 
 * Funciones
 
-	
+	Las funciones son bloques de codigo utilizados para dividir un programa en partes, cada una de las cuales tendran una tera determinada.
+
+	De igual manera en la que declaramos variables podemos declara los valores de salida de cada funcion. aunque podemos definirlas como *void* el cual es una funcion que no tiene un retorno sino que solo efectuan la accion.
+
+	![Estructura de una funcion](https://slideplayer.es/slide/2750576/10/images/31/ESTRUCTURA+DE+UNA+FUNCION+EN+C.jpg)
+
+	Por otro lado, los header files son archivos con extendion *.h* que contienen declraciones y mavro definiciones de funciones en C. Para la implementacion de esta archivos es necesesario usar la directiva *#include* la cual nos permitira usar las funciones que contenga el header file. Esta es un practica muy comun en C o en C++, en donde se mantiene todas las constantes, macros, variables globales del sistema y prototipos de funciones en estos archivos para poder incluirlos donde sean necesarios.
 
 * Punteros
 
+	El lenguaje de programacion C al ser un lenguaje que permite interactua con los recursos del sistema nos permite hacer uso de los *pionters*. Un pointer es una variables que contiene la direecion de memoria de la variable. 
+
+	Los punteros son herramientas muy utiles en la programacion en C, pero dado a lo completo y extensos solo se abarcaran los arrays gracias a su gran relacion con los punteros.
+
+	Un array es conjunto n-dimensional de datos. En programacion es una de las estructuras de datos mas basicos, en donde se carga, guarda y se opera la informacion contenida en ellos. En C como en la mayoria de los lenguajes de programacion se tienen que definir el tamanio, es ahi donde los pointers entran en accion, ya que no se define el tamanio del array sino que se usa un espacio en memoria en donde se alogara la informacion.
+
+
 * Estructuras
+
+	Una estructura es una coleccion de una o mas variables, usualmente de diferentes tipos, agrupados bajo un mismo nombre para su manejo. (En lenguajes como *Pascal* las estructuras son llamadas *records*)  Las estructuras son muy utilespara organizar datos, particualrmente en grandes programas.
+
+
+Para mayor comprehension del tema: The C programming language (Kernighan, B & Ritchie, D)
 
 
 ## Ejercicios
@@ -320,4 +338,9 @@ make clear
 	* > gcc version 12.1.1 20220730 (GCC)
 	* > Editor: nvim
 	* > standard C libraries (string, stdio, math, etc...) 
+
+# REFERENCIAS
+
+* [The GBU C Refence Manual](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
+* [C Programming Language](https://www.amazon.es/Programming-Language-Prentice-Hall-Software/dp/0131103628)
 
