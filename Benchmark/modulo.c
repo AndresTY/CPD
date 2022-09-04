@@ -32,17 +32,29 @@ void inicializacion(int N, double *a, double *b, double *c) {
   }
 }
 
-void fill(int N, double *a) {
+void inicializacion_int(int N, int *a, int *b, int *c) {
+  int i, j, k = 0;
+  for (i = 0; i < N; i++) {
+    for (j = 0; j < N; j++) {
+      k++;
+      a[j + i * N] = 2.0 * (i + j);
+      b[j + i * N] = k;
+      /*b[j+i*N] = 3.7*(i+j);*/
+      c[j + i * N] = 0;
+    }
+  }
+}
+void fill(int N, double *a, double (*f)()) {
   int i, j;
   double temp;
   for (i = 0; i < N; i++) {
     for (j = 0; j < N; j++) {
-      printf("numero a[%d][%d]: ", i, j);
-      scanf("%lf", &temp);
-      a[j + i * N] = temp;
+      a[j + i * N] = (*f)();
     }
   }
 }
+
+double rnd_values() { return (double)(rand() % 10); }
 
 void multMatriz(int N, double *a, double *b, double *c) {
   int i, j, k;
@@ -63,15 +75,21 @@ void multMatriz(int N, double *a, double *b, double *c) {
   }
 }
 
-void FeamultMatriz(int N, double *a, double *b, double *c) {
+void multMatriz_int(int N, int *a, int *b, int *c) {
   int i, j, k;
   for (i = 0; i < N; i++) {
     for (j = 0; j < N; j++) {
-      double S = 0;
+      int *pA, *pB, S = 0;
+      pA = a + (i * N);
+      pB = b + j;
       for (k = 0; k < N; k++) {
-        S += a[i + k * N] * b[k + j * N];
+        /*printf("%lf => %lf\n",*pA,*pB);*/
+        S = S + (*pA * *pB);
+        pA++;
+        pB += N;
       }
-      c[j + i * N] = S;
+      /*printf("S= %lf\n\n",S)*/
+      c[i * N + j] = S;
     }
   }
 }
