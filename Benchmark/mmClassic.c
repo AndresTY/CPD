@@ -17,6 +17,8 @@
  */
 
 #include "modulo.h"
+#include <errno.h>
+
 #define MEM_SIZE (1024 * 1024 * 64 * 2)
 
 static double MEM_CHUNK[MEM_SIZE];

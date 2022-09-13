@@ -20,7 +20,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/time.h>
+#include <unistd.h>
 
+long get_cpu();
 void inicializacion(int N, double *a, double *b, double *c);
 void inicializacion_int(int N, int *a, int *b, int *c);
 void fill(int N, double *a, double (*f)());

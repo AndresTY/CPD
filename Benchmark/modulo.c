@@ -19,6 +19,11 @@
  */
 #include "modulo.h"
 
+long get_cpu() {
+  long cpus = sysconf(_SC_NPROCESSORS_ONLN);
+  return cpus;
+}
+
 void inicializacion(int N, double *a, double *b, double *c) {
   int i, j, k = 0;
   for (i = 0; i < N; i++) {
