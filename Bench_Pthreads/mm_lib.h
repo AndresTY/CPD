@@ -1,18 +1,17 @@
 /*************************************************
-*Fecha: 09-agosto-2022
-*Autor: Juan Pablo Barrios Suarez
-*Materia: Parallel and Distribuited Computing
-*Tema: Biblioteca de funciones para  Multiplicación de matrices
-**************************************************/
+ *Fecha: 09-agosto-2022
+ *Autor: Juan Pablo Barrios Suarez
+ *Materia: Parallel and Distribuited Computing
+ *Tema: Biblioteca de funciones para  Multiplicación de matrices
+ **************************************************/
 
 #ifndef MM_LIB_H_INCLUDED
 #define MM_LIB_H_INCLUDED
 
-#include <stdio.h>
 #include <math.h>
-#include <time.h>
+#include <stdio.h>
 #include <stdlib.h>
-
+#include <time.h>
 
 void punto_prueba_inicial();
 void punto_prueba_final();
@@ -22,5 +21,6 @@ void multiplicacion_mm_double(double *a, double *b, double *c, int N);
 void impresion_mm_double(double *matriz, int N);
 void inicializacion_mm_double(double *a, double *b, double *c, int N);
 void *mm_clasica(void *argHILO_mm);
+void mm_C(double *a, double *b, double *c, int N, int Num_Threads);
 
 #endif
