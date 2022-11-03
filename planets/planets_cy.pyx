@@ -3,14 +3,14 @@ cdef extern from "math.h":
 
 cdef class  Planet(object):
   cdef public double x,y,z,vx,vy,vz,m
-    def __init__(self):  
-        self.x = 1.0
-        self.y = 0.0
-        self.z = 0.0
-        self.vx=0.0
-        self.vy= 0.5
-        self.vz = 0.0
-        self.m =1.0
+  def __init__(self):  
+    self.x = 1.0
+    self.y = 0.0
+    self.z = 0.0
+    self.vx=0.0
+    self.vy= 0.5
+    self.vz = 0.0
+    self.m =1.0
 
 cdef void single_step(object planet, double dt):
     cdef double distance,Fx,Fy,Fz
