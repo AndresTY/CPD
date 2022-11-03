@@ -1,18 +1,18 @@
 cdef extern from "math.h":
- double sqrt(double x)
+ double sqrt(double x) nogil
 
 cdef class  Planet(object):
   cdef public double x,y,z,vx,vy,vz,m
-  def __init__(self):  
-    self.x = 1.0
-    self.y = 0.0
-    self.z = 0.0
-    self.vx=0.0
-    self.vy= 0.5
-    self.vz = 0.0
-    self.m =1.0
+    def __init__(self):  
+        self.x = 1.0
+        self.y = 0.0
+        self.z = 0.0
+        self.vx=0.0
+        self.vy= 0.5
+        self.vz = 0.0
+        self.m =1.0
 
-cdef void single_step(Planet planet, double dt):
+cdef void single_step(object planet, double dt):
     cdef double distance,Fx,Fy,Fz
     distance =sqrt(planet.x**2 + planet.y**2 + planet.x**2)    
     
@@ -28,14 +28,13 @@ cdef void single_step(Planet planet, double dt):
     planet.vy += dt * Fy/planet.m
     planet.vz += dt * Fz/planet.m
 
-cdef  void step_time(Planet planet, double time_span, int n_steps):   
+cdef  void step_time(object planet, double time_span, int n_steps):   
 
     dt = time_span / n_steps
     cdef int j
     for j in range(n_steps):
         single_step(planet,dt)
 
-def main(dt=5000,iters = 1000000):   
- miPlanet = Planet()
+def settings(miPlanet,dt=5000,iters = 1000000):   
  step_time(miPlanet,dt,iters)
 
