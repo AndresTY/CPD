@@ -1,5 +1,6 @@
-cdef extern from "math.h":
+﻿cdef extern from "math.h":
  double sqrt(double x) nogil
+
 
 cdef class  Planet(object):
   cdef public double x,y,z,vx,vy,vz,m
