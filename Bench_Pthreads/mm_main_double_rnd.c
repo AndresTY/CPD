@@ -1,10 +1,4 @@
-/*************************************************
- *Fecha: 09-agosto-2022
- *Autor: Juan Pablo Barrios Suarez
- *Materia: Parallel and Distribuited Computing
- *Tema: Construcción Benchmark Multiplicación de matrices
- *Tópico: Uso Pthreads para paralelismo
- **************************************************/
+
 #include "mm_lib.h"
 #include <stdio.h>
 #include <stdlib.h>

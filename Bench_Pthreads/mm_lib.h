@@ -1,9 +1,4 @@
-/*************************************************
- *Fecha: 09-agosto-2022
- *Autor: Juan Pablo Barrios Suarez
- *Materia: Parallel and Distribuited Computing
- *Tema: Biblioteca de funciones para  Multiplicación de matrices
- **************************************************/
+
 
 #ifndef MM_LIB_H_INCLUDED
 #define MM_LIB_H_INCLUDED

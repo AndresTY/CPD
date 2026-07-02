@@ -1,10 +1,3 @@
-/*************************************************
- *Fecha: 09-agosto-2022
- *Autor: Juan Pablo Barrios Suarez
- *Materia: Parallel and Distribuited Computing
- *Tema: Biblioteca de funciones para  Multiplicación de matrices
- *Tópico: Módulo para paralelismo
- **************************************************/
 
 #include "mm_lib.h"
 #include <errno.h>

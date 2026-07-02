@@ -1,23 +1,3 @@
-/*
- * =====================================================================================
- *
- *       Filename:  app.c
- *
- *    	  Subject:
- *
- *    Description:
- *
- *        Version:  1.0
- *        Created:  08/04/22 00:45:59
- *  Github/Gitlab:  AndresTY/
- *       Compiler:  gcc/g++
- *
- *         Author:  Andres Santiago Ducuara Velasquez (),
- * andres.ducuara01@usa.edu.co Organization:
- *
- * =====================================================================================
- */
-
 #include "taller1.h"
 #include <stdio.h>
 #include <stdlib.h>
